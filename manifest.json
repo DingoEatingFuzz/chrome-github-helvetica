@@ -1,0 +1,14 @@
+{
+  "name": "Github Helvetica",
+  "description": "Gives Github the gift of Helvetica",
+  "homepage_url": "https://github.com/DingoEatingFuzz/chrome-github-helvetica",
+  "manifest_version": 2,
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": [ "*://*.github.com/*" ],
+      "js": [ "postprocess.js" ],
+      "run_at": "document_end"
+    }
+  ]
+}
